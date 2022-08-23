@@ -3852,6 +3852,11 @@ use-sidecar@^1.0.1, use-sidecar@^1.0.5:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
 
+use-ssr@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/use-ssr/-/use-ssr-1.0.24.tgz#213a3df58f5ab9268e6fe1a57ad0a9de91e514d1"
+  integrity sha512-0MFps7ezL57/3o0yl4CvrHLlp9z20n1rQZV/lSRz7if+TUoM6POU1XdOvEjIgjgKeIhTEye1U0khrIYWCTWw4g==
+
 uvu@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/uvu/-/uvu-0.5.3.tgz#3d83c5bc1230f153451877bfc7f4aea2392219ae"
