@@ -48,7 +48,7 @@ const Hero = ({ featuredPost, categories }) => {
             fontWeight={'bold'}
           >
             <Text bgGradient={'linear(to-l, #7928CA, #FF0080)'} bgClip={'text'}>
-              FEATURED
+              DESTAQUE
             </Text>
           </Box>
 
@@ -83,7 +83,7 @@ const Hero = ({ featuredPost, categories }) => {
                   rightIcon={<ChevronRightIcon />}
                   bgColor={'transparent'}
                 >
-                  Browse all categories
+                  Navegue por todas as categorias
                 </Button>
               </Link>
             </NextLink>

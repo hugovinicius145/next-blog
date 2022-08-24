@@ -28,8 +28,8 @@ const changeRoute = (tabIndex, router, query) => {
         query.c
           ? `/articles?c=${query.c}`
           : query.t
-          ? `/articles?t=${query.t}`
-          : '/articles'
+            ? `/articles?t=${query.t}`
+            : '/articles'
       );
     case 1:
       return router.push('/snippets');
@@ -68,9 +68,9 @@ const SearchPageBody = ({
             overflowX={isLessThan480px && 'scroll'}
             overflowY={isLessThan480px && 'hidden'}
           >
-            <Tab _focus={{ outline: 'none' }}>Articles</Tab>
+            <Tab _focus={{ outline: 'none' }}>Artigos</Tab>
             <Tab _focus={{ outline: 'none' }}>Snippets</Tab>
-            <Tab _focus={{ outline: 'none' }}>Categories</Tab>
+            <Tab _focus={{ outline: 'none' }}>Categorias</Tab>
             <Tab _focus={{ outline: 'none' }}>Tags</Tab>
           </TabList>
           <TabPanels>
@@ -92,7 +92,7 @@ const SearchPageBody = ({
                     </SimpleGrid>
                   ) : (
                     <Center my={20}>
-                      {loading ? <Spinner size={'lg'} /> : 'No articles found'}
+                      {loading ? <Spinner size={'lg'} /> : 'Nenhum artigo encontrado'}
                     </Center>
                   )}
                 </>
@@ -115,7 +115,7 @@ const SearchPageBody = ({
                     </Wrap>
                   ) : (
                     <Center my={20}>
-                      {loading ? <Spinner size={'lg'} /> : 'No snippets found'}
+                      {loading ? <Spinner size={'lg'} /> : 'Nenhum Snippet encontrado'}
                     </Center>
                   )}
                 </>
@@ -141,7 +141,7 @@ const SearchPageBody = ({
                       {loading ? (
                         <Spinner size={'lg'} />
                       ) : (
-                        'No categories found'
+                        'Nenhuma Categoria encontrada'
                       )}
                     </Center>
                   )}
@@ -163,7 +163,7 @@ const SearchPageBody = ({
                     </Wrap>
                   ) : (
                     <Center my={20}>
-                      {loading ? <Spinner size={'lg'} /> : 'No tags found'}
+                      {loading ? <Spinner size={'lg'} /> : 'Nenhuma Tag encontrada'}
                     </Center>
                   )}
                 </>

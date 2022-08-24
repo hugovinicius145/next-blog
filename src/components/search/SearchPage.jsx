@@ -31,11 +31,11 @@ const SearchPage = ({
       ? query.c
         ? queries.GET_ARTICLES_MATCHING_CATEGORY
         : query.t
-        ? queries.GET_ARTICLES_MATCHING_TAG
-        : queries.GET_ARTICLES
+          ? queries.GET_ARTICLES_MATCHING_TAG
+          : queries.GET_ARTICLES
       : activeTab === 1
-      ? queries.GET_SNIPPETS
-      : queries.GET_CATEGORIES,
+        ? queries.GET_SNIPPETS
+        : queries.GET_CATEGORIES,
     {
       variables: {
         searchQuery: searchQuery
@@ -93,14 +93,14 @@ const SearchPage = ({
         loading={loading}
         error={variableError}
       />
-      <Box my={20} mx={'auto'}>
+      {/* <Box my={20} mx={'auto'}>
         <AdSense
           style={{ display: 'block' }}
           adFormat={'fluid'}
           adSlot={siteConfig.adsense.slots.inFeed}
           data-ad-layout-key={'-f9+52+6z-e1+5b'}
         />
-      </Box>
+      </Box> */}
     </>
   );
 };

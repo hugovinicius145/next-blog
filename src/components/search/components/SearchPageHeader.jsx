@@ -14,11 +14,11 @@ import { Search2Icon } from '@chakra-ui/icons';
 const changePlaceholderText = (param) => {
   switch (param) {
     case 0:
-      return 'articles';
+      return 'artigos';
     case 1:
       return 'snippets';
     case 2:
-      return 'categories';
+      return 'categorias';
     case 3:
       return 'tags';
     default:
@@ -42,7 +42,7 @@ const SearchPageHeader = ({ activeTab, searchHandler }) => {
             <Input
               type={'text'}
               name={'search'}
-              placeholder={`Search ${changePlaceholderText(activeTab)}...`}
+              placeholder={`Pesquise ${changePlaceholderText(activeTab)}...`}
               bg={inputBg}
               w={'85%'}
             />
@@ -59,7 +59,7 @@ const SearchPageHeader = ({ activeTab, searchHandler }) => {
             <Center>
               <VStack spacing={6}>
                 <Heading color={'white'}>
-                  What you want to {activeTab === 0 ? 'read' : 'explore'}?
+                  O que você quer {activeTab === 0 ? 'ler' : 'explorar'}?
                 </Heading>
                 <form onSubmit={(e) => searchHandler(e)}>
                   <InputGroup>
@@ -69,7 +69,7 @@ const SearchPageHeader = ({ activeTab, searchHandler }) => {
                     <Input
                       type={'text'}
                       name={'search'}
-                      placeholder={`Search ${changePlaceholderText(
+                      placeholder={`Pesquise ${changePlaceholderText(
                         activeTab
                       )}...`}
                       bg={inputBg}

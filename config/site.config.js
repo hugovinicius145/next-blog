@@ -4,75 +4,67 @@ const siteConfig = {
     author: 'Hugo Lima',
     copyright: 'hugoviniccius',
     description:
-      'Browse programming tutorials and articles written by Rakesh Potnuru. Learn Web Development, Blockchain, Web3 and Technical writing.',
+      'Tenha as melhores estratégias digitais e artigos escritos por Hugo Lima. Aprenda Desenvolvimento Web, trafégo pago, estratégias digitais e redação técnica.',
     image:
-      'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661310876/HL_zavcr9.jpg',
+      'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661354439/android-chrome-512x512_pe4fny.jpg',
     altText: 'Blog HL Digital',
     ogType: 'website',
-    monetizationTag: '$ilp.uphold.com/82eq8NKY4NEZ',
-    // twitterUsername: '@rakesh_at_tweet',
-    pages: {
-      supportMe: {
-        title: 'Support Me | Blog HL Digital',
-        description:
-          'Your support keeps this blog alive and motivates me to keep creating content.',
-        image:
-          'https://ik.imagekit.io/itsrakesh/Blog/support_me_DUCAFlO96.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350841027'
-      },
+    monetizationTag: '',
+    pages: {      
       articles: {
-        title: 'Articles | Blog HL Digital',
+        title: 'Artigos | Blog HL Digital',
         description:
-          'Read articles on web development, web3, blockchain, design, and more.',
+          'Leia artigos sobre estrategias digitais, desenvolvimento web, tráfego pago, ferramentas e muito mais.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/articles_QqdeLjlbl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350838382'
+          ''
       },
       snippets: {
         title: 'Snippets | Blog HL Digital',
         description:
-          'Snippets are code samples and quick tips that I have written. Explore and share them.',
+          'Snippets são exemplos de código e dicas rápidas que escrevi. Explore-os e compartilhe-os.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/snippets_ma1o5jx8Z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350839459'
+          ''
       },
       categories: {
-        title: 'Categories | Blog HL Digital',
-        description: 'Browse different categories.',
+        title: 'Categorias | Blog HL Digital',
+        description: 'Navegue por diferentes categorias.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/categories_u4RkWWNIi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350838394'
+          ''
       },
       tags: {
         title: 'Tags | Blog HL Digital',
-        description: 'Explore all the tags.',
+        description: 'Explore todas as tags.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/tags_kBWiaEWuR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350842330'
+          ''
       },
       privacy: {
-        title: 'Privacy Policy | Blog HL Digital',
-        description: 'This page contains Blog HL Digital privacy policies.',
+        title: 'Política de Privacidade | Blog HL Digital',
+        description: 'Esta página contém as políticas de privacidade do Blog HL Digital.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/privacy_policy_xq4AJG1mUd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350838506'
+          ''
       },
       cookie: {
-        title: 'Cookie Policy | Blog HL Digital',
-        description: 'This page contains Blog HL Digital privacy policies.',
+        title: 'Política de cookies | Blog HL Digital',
+        description: 'Esta página contém as políticas de cookies do Blog HL Digital.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/cookie_policy_ulfXI9cMG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656351873708'
+          ''
       },
       terms: {
-        title: 'Terms & Conditions | Blog HL Digital',
-        description: 'This page contains Blog HL Digital terms & conditions.',
+        title: 'Termos & Condições | Blog HL Digital',
+        description: 'Esta página contém os termos e condições do Blog HL Digital.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/terms___conditions_jb7mesw-j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350842954'
+          ''
       },
       externalArticles: {
-        title: 'External Articles | Blog HL Digital',
-        description: 'Read articles written by Rakesh Potnuru on other sites.',
+        title: 'Artigos Externos | Blog HL Digital',
+        description: 'Leia artigos escritos por Hugo Lima em outros sites.',
         image:
-          'https://ik.imagekit.io/itsrakesh/Blog/external_articles_urr6u2vH1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657081755552'
+          ''
       }
     }
   },
   branding: {
-    logo: 'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661309732/logo_2_h8olin.jpg',
+    logo: 'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661354439/android-chrome-512x512_pe4fny.jpg',
     colors: {
       brand: {
         50: '#7868E6',
@@ -99,10 +91,10 @@ const siteConfig = {
     },
   },
   adsense: {
-    publisherId: 'pub-5607528168839545',
+    publisherId: '',
     slots: {
-      pageTop: '6183806725',
-      inFeed: '3408517885'
+      pageTop: '',
+      inFeed: ''
     }
   },
   copyrightText: `@ ${new Date().getFullYear()} HL Soluções Digitais LTDA. Todos os direitos reservados.`,
