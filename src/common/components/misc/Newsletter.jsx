@@ -26,34 +26,33 @@ const Newsletter = () => {
       <Center color={'white'}>
         <VStack>
           <Heading mb={4} textAlign={['center', null]}>
-            Subscribe to Newsletter
+            Assine a Newsletter
             <Center>
               <Box my={2} w={'40%'} h={'5px'} bg={'brand.300'} />
             </Center>
           </Heading>
-          <SimpleGrid columns={[1, 2]} spacing={4} w={[null, '70%']}>
-            <Box>
-              <Center>
-                <Heading size={'md'}>Weekly</Heading>
-              </Center>
-              <Divider my={2} />
-              <List spacing={4} my={2}>
-                <ListItem>
-                  <ListIcon as={CheckCircleIcon} />
-                  Never miss an update.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={CheckCircleIcon} />
-                  Get articles and snippets directly to your inbox.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={CheckCircleIcon} />
-                  Subscribe to stay connected and avoid getting lost among
-                  millions of websites.
-                </ListItem>
-              </List>
-            </Box>
-            <Box>
+          {/* <SimpleGrid columns={[1, 1]} spacing={4} w={[null, '70%']}> */}
+          <Box textAlign="center">
+            <Center>
+              <Heading size={'md'}>Semanalmente</Heading>
+            </Center>
+            <Divider my={2} />
+            <List spacing={4} my={2}>
+              <ListItem>
+                <ListIcon as={CheckCircleIcon} />
+                Nunca perca uma atualização.
+              </ListItem>
+              <ListItem>
+                <ListIcon as={CheckCircleIcon} />
+                Receba artigos e trechos diretamente na sua caixa de entrada.
+              </ListItem>
+              <ListItem>
+                <ListIcon as={CheckCircleIcon} />
+                Inscreva-se para ficar conectado e evitar se perder entre milhões de sites.
+              </ListItem>
+            </List>
+          </Box>
+          {/* <Box>
               <Center>
                 <Heading size={'md'}>Monthly</Heading>
               </Center>
@@ -64,18 +63,19 @@ const Newsletter = () => {
                   Coming soon...
                 </ListItem>
               </List>
-            </Box>
-          </SimpleGrid>
+            </Box> */}
+          {/* </SimpleGrid> */}
 
           <Link href={process.env.NEXT_PUBLIC_SUBSTACK_URL} isExternal>
             <Button
+              mt="4"
               rightIcon={<ChevronRightIcon />}
               bg={'brand.300'}
               color={'black'}
               _hover={{ bg: 'brand.300', opacity: 0.8 }}
               _active={{ bg: 'brand.300', opacity: 0.8 }}
             >
-              Subscribe Now
+              Inscreva-se agora
             </Button>
           </Link>
         </VStack>

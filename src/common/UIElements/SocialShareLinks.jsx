@@ -8,6 +8,8 @@ import {
   FaTwitter
 } from 'react-icons/fa';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
 const SocialShareIcon = ({ label, placement, href, icon }) => {
   return (
     <Tooltip hasArrow label={label} placement={placement}>
@@ -30,25 +32,25 @@ const SocialShareLinks = ({
       <SocialShareIcon
         label={'Share on Twitter'}
         placement={toolTipPlacement}
-        href={`https://twitter.com/intent/tweet?url=https://blog.itsrakesh.co/${slug}&text="${title}"%20by%20@rakesh_at_tweet`}
+        href={`https://twitter.com/intent/tweet?url=${siteUrl}/${slug}&text="${title}"%20by%20`}
         icon={<FaTwitter />}
       />
       <SocialShareIcon
         label={'Share on LinkedIn'}
         placement={toolTipPlacement}
-        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://blog.itsrakesh.co/${slug}`}
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${siteUrl}/${slug}`}
         icon={<FaLinkedin />}
       />
       <SocialShareIcon
         label={'Share on Facebook'}
         placement={toolTipPlacement}
-        href={`https://www.facebook.com/sharer/sharer.php?u=https://blog.itsrakesh.co/${slug}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=${siteUrl}/${slug}`}
         icon={<FaFacebook />}
       />
       <SocialShareIcon
         label={'Share on Reddit'}
         placement={toolTipPlacement}
-        href={`https://reddit.com/submit?url=https://blog.itsrakesh.co/${slug}&title=${title}`}
+        href={`https://reddit.com/submit?url=${siteUrl}/${slug}&title=${title}`}
         icon={<FaReddit />}
       />
       <Tooltip hasArrow label="Copy Link" placement={toolTipPlacement}>

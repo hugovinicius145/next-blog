@@ -6,7 +6,7 @@ const CommentBox = () => {
 
   return (
     <Container maxW={'container.md'} my={10}>
-      <Heading size={'md'}>LEAVE A COMMENT OR START A DISCUSSION</Heading>
+      <Heading size={'md'}>COMENTÁRIOS</Heading>
       <Box my={10}>
         <Giscus
           repo={process.env.NEXT_PUBLIC_GISCUS_REPO}
