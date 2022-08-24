@@ -8,7 +8,7 @@ const Searchbar = ({ placeholder, width, searchHandler }) => {
         <Input
           type={'text'}
           name={'search'}
-          placeholder={placeholder ? placeholder : 'Search anything...'}
+          placeholder={placeholder ? placeholder : 'Pesquise qualquer coisa...'}
         />
         <InputRightAddon
           aria-label={'Search'}

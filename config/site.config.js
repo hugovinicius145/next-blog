@@ -6,7 +6,7 @@ const siteConfig = {
     description:
       'Browse programming tutorials and articles written by Rakesh Potnuru. Learn Web Development, Blockchain, Web3 and Technical writing.',
     image:
-      'https://ik.imagekit.io/itsrakesh/Blog/itsrakesh_-_blog_r0SAC1__p.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656350838485',
+      'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661310876/HL_zavcr9.jpg',
     altText: 'Blog HL Digital',
     ogType: 'website',
     monetizationTag: '$ilp.uphold.com/82eq8NKY4NEZ',
@@ -72,7 +72,7 @@ const siteConfig = {
     }
   },
   branding: {
-    logo: 'https://ik.imagekit.io/itsrakesh/Blog/blog_logo_Gk6jqlMK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650611776118',
+    logo: 'https://res.cloudinary.com/hl-solu-es-digitais/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1661309732/logo_2_h8olin.jpg',
     colors: {
       brand: {
         50: '#7868E6',
@@ -93,13 +93,10 @@ const siteConfig = {
   },
   urls: {
     socials: {
+      instagram: 'https://instagram.com/hugoviniccius',
       linkedin: 'https://www.linkedin.com/in/hugoviniccius/',
       github: 'https://github.com/hugovinicius145',
     },
-    // about: 'https://itsrakesh.co/about',
-    // status: 'https://status.itsrakesh.co',
-    // newsletter: 'https://newsletter.itsrakesh.co',
-    // kofi: 'https://ko-fi.com/itsrakesh'
   },
   adsense: {
     publisherId: 'pub-5607528168839545',
@@ -108,7 +105,7 @@ const siteConfig = {
       inFeed: '3408517885'
     }
   },
-  copyrightText: `@ ${new Date().getFullYear()} Blog HL Digital. Todos os direitos reservados.`,
+  copyrightText: `@ ${new Date().getFullYear()} HL Soluções Digitais LTDA. Todos os direitos reservados.`,
   siteVersion: '1.0.0'
 };
 

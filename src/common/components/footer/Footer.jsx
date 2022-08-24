@@ -12,7 +12,7 @@ import {
   Link,
   Flex
 } from '@chakra-ui/react';
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 import { ShowwcaseIcon } from '@/icons/index.js';
 import siteConfig from '../../../../config/site.config';
@@ -24,16 +24,16 @@ const Footer = () => {
       <Box id={'footer'} p={{ base: 10, md: 20 }} bg={'black'} color={'white'}>
         <SimpleGrid columns={{ base: 1, md: 3 }}>
           <VStack>
-            <Heading fontFamily={'Poppins'}>itsrakesh</Heading>
+            <Heading fontFamily={'Poppins'}>HL Digital</Heading>
             <HStack spacing={2}>
-              <Link href={siteConfig.urls.socials.twitter} isExternal>
+              <Link href={siteConfig.urls.socials.instagram} isExternal>
                 <IconButton
-                  aria-label="twitter"
+                  aria-label="instagram"
                   bg={'transparent'}
-                  _hover={{ bg: 'transparent', color: 'twitter' }}
-                  _active={{ bg: 'transparent', color: 'twitter' }}
-                  _visited={{ bg: 'transparent', color: 'twitter' }}
-                  icon={<Icon as={FaTwitter} w={6} h={6} />}
+                  _hover={{ bg: 'transparent', color: 'whiteAlpha.500' }}
+                  _active={{ bg: 'transparent', color: 'whiteAlpha.500' }}
+                  _visited={{ bg: 'transparent', color: 'whiteAlpha.500' }}
+                  icon={<Icon as={FaInstagram} w={6} h={6} />}
                 />
               </Link>
               <Link href={siteConfig.urls.socials.linkedin} isExternal>
@@ -56,29 +56,19 @@ const Footer = () => {
                   icon={<Icon as={FaGithub} w={6} h={6} />}
                 />
               </Link>
-              <Link href={siteConfig.urls.socials.showwcase} isExternal>
-                <IconButton
-                  aria-label="showwcase"
-                  bg={'transparent'}
-                  _hover={{ bg: 'transparent', color: 'whiteAlpha.500' }}
-                  _active={{ bg: 'transparent', color: 'whiteAlpha.500' }}
-                  _visited={{ bg: 'transparent', color: 'whiteAlpha.500' }}
-                  icon={<Icon as={ShowwcaseIcon} w={6} h={6} />}
-                />
-              </Link>
             </HStack>
           </VStack>
 
           <Spacer />
 
           <SimpleGrid columns={3} mt={{ base: 4, md: 0 }}>
-            <VStack>
+            {/* <VStack>
               <Heading
                 size={'sm'}
                 alignSelf={'flex-start'}
                 whiteSpace={'nowrap'}
               >
-                QUICK LINKS
+                LINKS RÁPIDOS
               </Heading>
               <List
                 fontSize={'small'}
@@ -88,7 +78,7 @@ const Footer = () => {
               >
                 <ListItem>
                   <Link href={siteConfig.urls.about} isExternal>
-                    About
+                    Sobre
                   </Link>
                 </ListItem>
                 <ListItem>
@@ -109,7 +99,7 @@ const Footer = () => {
                   <Link href={'/support-me'}>Support Me </Link>❤️
                 </ListItem>
               </List>
-            </VStack>
+            </VStack> */}
 
             <Spacer />
 
@@ -119,14 +109,14 @@ const Footer = () => {
               </Heading>
               <List fontSize={'small'} alignSelf={'flex-start'} spacing={1}>
                 <ListItem>
-                  <Link href={'/legal/privacy-policy'}>Privacy Policy</Link>
+                  <Link href={'/legal/privacy-policy'}>Política de Privacidade</Link>
                 </ListItem>
                 <ListItem>
-                  <Link href={'/legal/cookie-policy'}>Cookie Policy</Link>
+                  <Link href={'/legal/cookie-policy'}>Política de Cookies</Link>
                 </ListItem>
                 <ListItem>
                   <Link href={'/legal/terms-and-conditions'}>
-                    Terms &amp; Conditions
+                    Termos &amp; Condições
                   </Link>
                 </ListItem>
               </List>

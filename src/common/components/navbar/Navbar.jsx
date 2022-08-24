@@ -7,7 +7,8 @@ import {
   useColorModeValue,
   useMediaQuery,
   useColorMode,
-  Image
+  Image,
+  Heading
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
@@ -81,13 +82,13 @@ const Navbar = () => {
         <Center cursor={'pointer'}>
           <NextLink href={'/'} passHref>
             <Link tabIndex={-1}>
-              <Image
-                src={siteConfig.branding.logo}
-                alt={'itsrakesh blog logo'}
-                htmlWidth={50}
-                htmlHeight={50}
-                tabIndex={0}
-              />
+              <Heading
+                fontFamily={'Poppins'}
+                bgGradient='linear( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% )'
+                bgClip='text'
+              >
+                HL Digital
+              </Heading>
             </Link>
           </NextLink>
         </Center>
